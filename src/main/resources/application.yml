@@ -1,0 +1,22 @@
+#jsp
+spring:
+ config:
+    import: mysql.yml
+ mvc:
+   view:
+     prefix: /WEB-INF/
+     suffix: .jsp
+ devtools:
+   livereload:
+     enabled: true
+ servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+#mybatis
+mybatis:
+  type-aliases-package: data.*
+  mapper-locations:
+  - /mapper/**/*.xml
+  
