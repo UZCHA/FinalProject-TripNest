@@ -48,6 +48,16 @@
     <td align=center>이름</td>
     <td align=center>담당기능</td>
   <tr>
+    <td>차유지</td>
+    <td>
+      <span>- 호스트 숙소 등록 및 수정, 삭제/ mypage에서 숙소 리스트 출력</span><br>
+      <span>   -> 숙소를 등록하고 수정,삭제할때 aws의 s3에 이미지들이 저장되고 수정됨</span><br>
+      <span>- 위시리스트 추가 및 삭제, 위시리스트 목록 출력</span><br>
+      <span>- 1:1문의 등록, mypage에서 문의 목록 출력 및 답변 확인</span><br>
+      <span>- 관리자 페이지->메인페이지 제작, 1:1문의에 대한 관리자 답변 등록,수정/등록된 숙소 관리기능</span><br>
+    </td>
+  </tr>
+  <tr>
     <td>김민규</td>
     <td>
       <span>- 메인 : 숙소/기사/이벤트 목록 출력</span><br>
@@ -59,9 +69,8 @@
   <tr>
     <td>문인규</td>
     <td>
-      <span>-</span><br>
-      <span>-</span><br>
-      <span>-</span>
+      <span>- 메인 : Redis를 이용해 메인페이지 인기 숙소 목록 출력</span><br>
+      <span>- 이벤트 : 쿠폰 이벤트 생성. 쿠폰 발급, 사용, 조회 (메세지큐를 이용해 쿠폰 발급 동시성 문제 해결)</span><br>
     </td>
   </tr>
   <tr>
@@ -90,22 +99,26 @@
       <span>- 마이페이지->마이페이지 전반적 디자인, 예약/취소 내역 확인 기능, 회원 정보 수정 및 탈퇴 기능</span>
     </td>
   </tr>
-  <tr>
-    <td>차유지</td>
-    <td>
-      <span>- 호스트 숙소 등록 및 수정, 삭제/ mypage에서 숙소 리스트 출력</span><br>
-      <span>   -> 숙소를 등록하고 수정,삭제할때 aws의 s3에 이미지들이 저장되고 수정됨</span><br>
-      <span>- 위시리스트 추가 및 삭제, 위시리스트 목록 출력</span><br>
-      <span>- 1:1문의 등록, mypage에서 문의 목록 출력 및 답변 확인</span><br>
-      <span>- 관리자 페이지->메인페이지 제작, 1:1문의에 대한 관리자 답변 등록,수정/등록된 숙소 관리기능</span><br>
-    </td>
-  </tr>
+
 </table><br>
 
 
 
 ## 📑기능설명
+### ▪️ 차유지
+<span><b>호스트 숙소 등록</b></span><br>
+<span>숙소를 등록할때 이미지들은 aws의 s3에 저장됨 </span>
+<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/f5694226-8da1-4c1b-a0ab-17c02bb171b1" type="video/mp4"></video></div><br>
+<b>등록한 숙소 수정 및 삭제</b>
+<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/107a0979-44de-4b43-809c-03558244ca9e" type="video/mp4"></video></div><br>
+<b>1:1문의 등록 ➡ 문의에 대한 관리자의 답변 등록과 수정 ➡ 마이페이지에서 답변 확인 가능</b>
+<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/5c5c19e5-1dde-4d3e-abff-8e793ba3f94e" type="video/mp4"></video></div><br>
+<b>위시리스트 추가 ➡ 날짜별로 추가한 위시리스트 목록 출력</b>
+<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/8145244b-b27a-4f1b-a56e-bd749990ec66" type="video/mp4"></video></div><br>
+<b>admin메인페이지/ 등록된 숙소 관리</b>
+<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/a5c39ff3-852c-4e9b-b153-6e5e3a0727bb" type="video/mp4"></video></div><br>
 
+***
 ### ▪️ 김민규
 <span><b>메인 숙소,이벤트,기사 목록 출력</b></span><br>
 <div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/148257222/a1c3e2ad-ab89-498f-b7e8-13b99c835bad](https://github.com/FinalProject-TripNest/TripNest/assets/106788159/dac93e02-4d2a-4210-b92b-e6a4dad8f659"></video></div><br>
@@ -128,6 +141,12 @@
 
 ***
 ### ▪️ 문인규
+
+<span><b>메인페이지 인기 숙소 목록</b></span>
+<div><video src="https://github.com/user-attachments/assets/169fbc10-d5b0-4ef5-9fb5-b884909453c5"></video></div><br>
+<span><b>쿠폰 발급(수량 체크, 발급 유무 체크, 동시성 해결)</b></span>
+<div><video src="https://github.com/user-attachments/assets/135e9d2d-e4f4-4b10-8e35-86ba3f59ea93"></video></div><br>
+
 
 ***
 ### ▪️ 박범수
@@ -177,17 +196,4 @@
   <video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614674/d058dc81-a54d-4e65-bd3c-7f4a68f604c5"></video>
 </div>
 
-***
 
-### ▪️ 차유지
-<span><b>호스트 숙소 등록</b></span><br>
-<span>숙소를 등록할때 이미지들은 aws의 s3에 저장됨 </span>
-<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/f5694226-8da1-4c1b-a0ab-17c02bb171b1" type="video/mp4"></video></div><br>
-<b>등록한 숙소 수정 및 삭제</b>
-<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/107a0979-44de-4b43-809c-03558244ca9e" type="video/mp4"></video></div><br>
-<b>1:1문의 등록 ➡ 문의에 대한 관리자의 답변 등록과 수정 ➡ 마이페이지에서 답변 확인 가능</b>
-<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/5c5c19e5-1dde-4d3e-abff-8e793ba3f94e" type="video/mp4"></video></div><br>
-<b>위시리스트 추가 ➡ 날짜별로 추가한 위시리스트 목록 출력</b>
-<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/8145244b-b27a-4f1b-a56e-bd749990ec66" type="video/mp4"></video></div><br>
-<b>admin메인페이지/ 등록된 숙소 관리</b>
-<div><video src="https://github.com/FinalProject-TripNest/TripNest/assets/155614067/a5c39ff3-852c-4e9b-b153-6e5e3a0727bb" type="video/mp4"></video></div><br>
